@@ -25,7 +25,7 @@
       if ($scope.numFoodItems > 3) {
         message = "Too much!";
       } else if ($scope.numFoodItems === 0) {
-        message = "";
+        message = "Please enter data first.";
       }
       return message;
     };
