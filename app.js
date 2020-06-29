@@ -8,6 +8,7 @@
   function LunchCheckController($scope) {
     $scope.foodItems = "";
     $scope.numFoodItems = 0;
+    $scope.message = "";
 
     $scope.checkFoodItems = function () {
       console.log("checkFoodItems()");
@@ -18,6 +19,7 @@
           $scope.numFoodItems += 1;
         }
       });
+      $scope.message = $scope.getMessage();
     };
 
     $scope.getMessage = function () {
